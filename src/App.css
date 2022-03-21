@@ -1,0 +1,175 @@
+.App {
+  text-align: center;
+  background-color: #000000;
+color: white;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+.App-content {
+  background-color: #000000;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding:6px;
+
+}
+
+.div-form-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+a{
+  color: #2d4a85;
+  text-decoration: none;
+}
+
+.container-inicio{
+  display: grid;
+  grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));
+  min-height: 100vh;  
+  gap: 0px 16;
+width: 90%;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+.gifs-populares{
+display: block;
+}
+button{
+background-color: blue;
+width: 200px;
+height: 25px;
+z-index: 200;
+cursor: pointer;
+}
+.contenedor-gif  a{
+  min-height: 150px;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+
+}
+.contenedor-gif{
+
+}
+
+
+.div-from{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: #000000;
+  height: 35px;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+.div-from form{
+  display: flex;
+  align-items: center;
+  width: inherit;
+  padding-left: 8px;
+}
+.div-from i{
+  display: flex;
+  padding-right: 8px;
+  justify-content: end;
+}
+.div-from input{
+  outline: none;
+  border: none;
+  font-family: 1.4rem;
+  width: 90%;
+  padding-left: 4px;
+
+}
+.div-title p{
+font-size: 1.5rem;
+font-weight: 700;
+font-family: cursive;
+}
+.app-title{
+  display: flex;
+  width: 80%;
+  font-weight:500;
+
+
+}
+.container-trending {
+  width: 80%
+  
+}
+.container-trending ul {
+list-style: none;
+display: flex;
+flex-direction: column;
+display: inline-block;
+
+}
+.container-trending ul li {
+  display: inline-block;
+  margin: 4px;
+  background-color: brown;
+  border-radius: 4px;
+}
+.container-trending ul li a {
+color: white;
+
+}
+.btnsearch{
+cursor: pointer;
+}
+.container-inicio-trending{
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .div-from{
+   width: 400px;
+  }
+
+}
+
+
+@media screen and (min-width: 900px) {
+ 
+
+  .container-inicio{
+  width: 65%;
+  }
+
+  .container-inicio-trending{
+    display: flex;
+    flex-direction: row;
+  }
+  .container-trending{
+    width: 30%;
+    
+  }
+  .container-inicio-trending{
+    align-items: flex-start;
+  }
+}
+
+.select-filter{
+  height: 100%;
+}
