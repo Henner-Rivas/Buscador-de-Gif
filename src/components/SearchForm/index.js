@@ -8,8 +8,7 @@ const RATINGS = ["g", "pg", "pg-13", "r"];
 const SearchForm = ({initialKeyword,initialRating}) => {
   const [path, pushLocation] = useLocation()
 
-/*  /*  const [keyword, setKeyword] = useState(initialKeyword);
-  */
+
   
   const {keyword,times,rating,updateKeyword,updateRating}= useForm({initialKeyword,initialRating});
   const handleSumit = (e) => {
@@ -19,11 +18,7 @@ const SearchForm = ({initialKeyword,initialRating}) => {
 
   const handleChange = (e) => {
     updateKeyword(e.target.value)
-/*     dispatch(
-      {type: ACTIONS.UPDATE_KEYWORD,paylod:e.target.value}
-    ) */
-/*     setTimes(prev =>  prev + 1)
- */  };
+  };
 
 
 
